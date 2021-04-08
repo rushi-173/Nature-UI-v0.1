@@ -411,7 +411,7 @@ h6 {
 
 /* Button Icon */
 
-i {
+.fa {
 	font-size: 2rem;
 	pointer-events: none;
 	vertical-align: center; /* to align the icon with the text */
