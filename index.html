@@ -15,6 +15,37 @@
 			grid-template-columns: 3fr 2fr;
 		}
 
+		.main{
+			padding: 3rem; padding-top: 6rem; display: flex; flex-direction: column; justify-content: center;
+		}
+		.main h1{
+			font-size: 4rem;
+		}
+		.main span{
+			font-size: 1.5rem; margin-top:1rem; padding-left: 0.5rem; line-height: 2.5rem; color: #4b5563;
+		}
+
+		.brand{
+			display: flex; align-items: center; justify-content:center; flex-direction: column;
+		}
+
+		@media only screen and (max-width: 500px  ) {
+			body{
+				grid-template-columns: 1fr;
+				align-items: center;
+			}	
+			.main h1{
+				font-size: 2rem;
+			}	
+			.main span{
+				font-size: 1rem;
+			}	
+			.brand img{
+				width: 70%;
+			}
+		}
+		
+
 	</style>
 </head>
 <body>
@@ -95,13 +126,13 @@
 				</li>
 			</ul>
 		</nav>
-		<div style="padding: 3rem; padding-top: 6rem; display: flex; flex-direction: column; justify-content: center;">
-			<h1 style="font-size: 4rem;">
+		<div class="main">
+			<h1>
 				Build fast, light weight sites with Nature UI.
 			</h1>
-			<p style="font-size: 1.5rem; margin-top:1rem; padding-left: 0.5rem; line-height: 2.5rem; color: #4b5563;">
+			<span>
 				Nature-UI is a simple and accessible component library that gives you the building blocks you need to build your applications.
-			</p>
+			</span>
 			<div style="margin-top: 2rem;">
 				<a href="./components.html"><button class="btn btn-primary" style=" font-size: 1.5rem;"><b>Get Started</b></button></a> &nbsp; &nbsp;
 				<button class="btn btn-outline-primary" style=" font-size: 1.5rem;"><b>Download</b></button>
@@ -109,7 +140,7 @@
 			<p style="padding-left: 0.5rem; margin-top: 1rem;">Currently <b>v0.1.0</b></p>
 
 		</div>
-		<div style="display: flex; align-items: center; justify-content:center; flex-direction: column;">
+		<div class="brand">
 			<img src="gardenin-icon.png"/>
 			<h1 class="brand-name" style="font-size: 4rem; margin-top: 1rem">Nature<span style="font-size: 4rem;">UI</span></h1>
 		</div>
